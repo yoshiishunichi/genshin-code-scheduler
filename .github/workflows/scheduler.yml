@@ -7,11 +7,11 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  code-scheduler:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: post-code
         run: |
           curl -X POST ${{secrets.API_URL}}
