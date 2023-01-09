@@ -3,8 +3,6 @@ name: code-scheduler
 on:
   schedule:
     - cron: "0 15 * * *"
-  push:
-    branches: [main]
 
 jobs:
   code-scheduler:
